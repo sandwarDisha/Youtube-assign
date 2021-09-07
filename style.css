@@ -1,0 +1,147 @@
+*, *::before, *::after {
+
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+body {
+
+    margin:0%;
+}
+
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,150px));
+    gap: 40px 60px;
+    padding: 20px 0;
+    margin:0 10px ;
+    border-top: 10px salmon;
+}
+
+.video-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.video-bottom-section{
+    display: flex;
+    align-items: flex-start;
+    margin: 3px;
+}
+.video-details{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.video-title{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: black;
+}
+.thumbnail::before {
+
+ position:absolute;
+ background-color: rgba(0, 0,0,.50);
+ color: white;
+ right: 10px;
+ bottom: 5px;
+ padding: 5px;
+ border-radius: 3px;
+ font-size: 9px;
+}
+
+.videos{
+    background-color: #f9f9f9;
+}
+
+.categories{
+    padding: 10px 15px ;
+    border-top: 5px solid #999;
+    border-bottom: 5px solid #999;
+
+}
+
+.category{
+    margin-right: 10px;
+    word-wrap: none;
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    border-radius: 900px;
+    background-color: #e7e7e7;
+    padding: 10px 15px;
+    font-size: inherit;
+    transition: background-color 150ms;
+}
+
+.category:hover{
+  background-color: #ddd;
+}
+
+.category.active{
+    background-color: #606060;
+    color: white;
+    border-color: #eeee;
+}
+
+.header{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.logo{
+    height: 100px;
+
+}
+
+.search-bar{
+    display: flex;
+    flex-grow: 1;
+    margin: 0 2rem 4rem;
+}
+
+.search-input{
+    width: 100%;
+    font-size:inherit;
+    padding: 3px;
+    border: 1px solid #777;
+    border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+
+.search-btn{
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid #777;
+    background-color: #f8f8f8;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+}
+
+
+
